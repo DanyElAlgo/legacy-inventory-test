@@ -19,6 +19,6 @@ variable "iam_instance_profile_name" {
 }
 
 variable "app_port" {
-  description = "Puerto de la aplicación (usado como referencia en user_data)"
+  description = "Puerto de la aplicacion (usado como referencia en user_data)"
   type        = number
 }

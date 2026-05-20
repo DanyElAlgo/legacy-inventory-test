@@ -1,9 +1,9 @@
 resource "aws_security_group" "app_sg" {
   name        = "legacy-inventory-sg"
-  description = "Permite tráfico entrante en el puerto de la aplicación"
+  description = "Permite trafico entrante en el puerto de la aplicacion"
 
   ingress {
-    description = "Tráfico entrante en el puerto de la aplicación"
+    description = "Trafico entrante en el puerto de la aplicacion"
     from_port   = var.app_port
     to_port     = var.app_port
     protocol    = "tcp"
@@ -11,7 +11,7 @@ resource "aws_security_group" "app_sg" {
   }
 
   egress {
-    description = "Todo el tráfico saliente permitido"
+    description = "Todo el trafico saliente permitido"
     from_port   = 0
     to_port     = 0
     protocol    = "-1"

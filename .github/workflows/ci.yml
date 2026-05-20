@@ -9,7 +9,7 @@ on:
 jobs:
   build-and-test:
     timeout-minutes: 20
-    runs-on: ubuntu-24.04 # No se puede usar una versión mayor o GitHub Actions no correrá
+    runs-on: ubuntu-24.04 # No se puede usar una version mayor o GitHub Actions no correrá
 
     steps:
     - name: Checkout Repository

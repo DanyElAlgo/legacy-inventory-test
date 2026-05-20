@@ -19,7 +19,7 @@ resource "aws_instance" "app" {
 
     # TODO: desplegar la aplicacion
 
-    echo "Aplicación iniciada en el puerto ${var.app_port}"
+    echo "Aplicacion iniciada en el puerto ${var.app_port}"
   EOF
 
   tags = {
