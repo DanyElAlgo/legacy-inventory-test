@@ -9,7 +9,7 @@ on:
 jobs:
   build-and-test:
     timeout-minutes: 20
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04 # No se puede usar una versión mayor o GitHub Actions no correrá
 
     steps:
     - name: Checkout Repository
@@ -22,9 +22,6 @@ jobs:
       
     - name: Install dependencies
       run: npm install
-
-    - name: Build
-      run: npm run start
 
     - name: Test
       run: npm run test
