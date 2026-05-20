@@ -1,0 +1,27 @@
+name: CI trigger
+
+on:
+  push:
+    branches: [ 'develop' ]
+  pull_request:
+    branches: [ 'develop' ]
+
+jobs:
+  build-and-test:
+    timeout-minutes: 20
+    runs-on: ubuntu-24.04 # No se puede usar una versión mayor o GitHub Actions no correrá
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v6
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v6
+      with:
+        node-version: '21'
+      
+    - name: Install dependencies
+      run: npm install
+
+    - name: Test
+      run: npm run test
