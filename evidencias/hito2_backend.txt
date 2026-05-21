@@ -1,0 +1,5 @@
+backend "s3" {
+    bucket = "amzn-s3-test2-drpc"
+    key    = "legacy-inventory/terraform.tfstate"
+    region = "us-east-1"
+  }
