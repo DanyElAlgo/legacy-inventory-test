@@ -25,5 +25,5 @@ variable "instance_type" {
 variable "iam_instance_profile_name" {
   description = "Nombre del IAM Instance Profile que se asignara a la instancia EC2"
   type        = string
-  default     = "c214655a5423892l15199138t1w184526-LabEksClusterRole-EOnleqbo4gkZ"
+  default     = "LabInstanceProfile"
 }
