@@ -20,9 +20,6 @@ jobs:
       with:
         node-version: '21'
 
-    - name: Remove old AWS CLI
-      run: sudo yum remove awscli
-
     - name: Install AWS CLI
       run: |
         curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
